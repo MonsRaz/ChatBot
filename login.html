@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en" dir="ltr">
+	<script>
+		window.watsonAssistantChatOptions = {
+		  integrationID: "c4094edf-ed64-4d9d-9991-92d48b5bb488", // The ID of this integration.
+		  region: "au-syd", // The region your integration is hosted in.
+		  serviceInstanceID: "279af2df-27e9-4696-8a6e-153768c06069", // The ID of your service instance.
+		  onLoad: function(instance) { instance.render(); }
+		};
+		setTimeout(function(){
+		  const t=document.createElement('script');
+		  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+		  document.head.appendChild(t);
+		});
+	  </script>
+	<meta charset="utf-8">
+	<title>login form test</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="utama">
+		<div class="title">
+			Login Form
+		</div>
+		<form action="#">
+			<div class="field">
+				<input type="text" required>
+				<label>Email</label>
+			</div>
+			<div class="field">
+				<input type="password" required>
+				<label>Password</label>
+			</div>
+			<div class="content">
+				<div class="checkbox">
+					<input type="checkbox" id="simpan">
+				<label for="simpan">Simpan</label>
+				</div>
+				<div class="recovery">
+					<a href="recovery.html">Lupa Password</a>
+				</div>
+			</div>
+
+			<div class="field">
+				<input type="submit" value="Masuk">
+			</div>
+				<div class="daftar">
+					Silahkan Daftar Jika Belum Memiliki Akun <a href="daftar.html">Daftar</a>
+				</div>
+		</form>
+	</div>
+</body>
+</html>
