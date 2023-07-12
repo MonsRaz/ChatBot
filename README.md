@@ -1,4 +1,4 @@
-# ChatBot
+# ChatBot Using Watson Assistant
 IBM Project Build a chatbot using watson assistant
 First we will find the watson assistant in the ibm cloud
 
